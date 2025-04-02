@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #181818;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles (same as other pages) */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+header h1 a {
+    float: left;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: #000000;
+    font-weight: 500;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Contact section styles */
+.contact-section {
+    padding: 50px 0;
+}
+
+.contact-container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.contact-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.contact-content {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-item {
+    margin-bottom: 30px;
+}
+
+.contact-item h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #6C63FF;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #4339ff;
+}
+
+.contact-form {
+    flex: 2;
+}
+
+.contact-form h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #6C63FF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4339ff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}

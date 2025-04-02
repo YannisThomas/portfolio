@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #181818;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#main p {
+    margin-bottom: 0px !important;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.portfolio-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+
+header h1 a {
+    float: left;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: #000000;
+    font-weight: 500;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    color: #000000;
+    font-weight: 500;
+}
+
+section {
+    padding: 50px 0;
+}
+
+
+.diapos {
+    display: flex;
+    justify-content: center;
+}
+
+.diapo {
+    max-width: 100%;
+    height: auto;
+}
+
+.diapos img {
+    width: 100%;
+    height: auto;
+}
+
+.diapo-container {
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+    z-index: 1;
+}
+
+.diapos-container {
+
+    width: 75%;
+    margin: 0 auto;
+}
+
+.boutonsdiapo {
+    position: relative;
+    float: left bottom;
+    size: 25%;
+    bottom: 17%;
+    left: 10%;
+
+
+
+
+}
+
+.bouton1 {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+}
+
+.bouton2 {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+}
+
+.gauche {
+    height: auto;
+    max-width: 8vw;
+}
+
+.droite {
+    height: auto;
+    max-width: 8vw;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+
+}
