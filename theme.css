@@ -1,0 +1,381 @@
+/* Styles du toggle thème */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #181818;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Mode sombre */
+[data-theme="dark"] {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] body {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Header et navigation */
+[data-theme="dark"] header {
+    border-bottom: 1px solid #333;
+    background-color: #1a1a1a;
+}
+
+[data-theme="dark"] header h1 a {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] header h1 a:hover {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] nav ul li a {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] nav ul li a:hover {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .theme-toggle {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Textes généraux */
+[data-theme="dark"] h1, 
+[data-theme="dark"] h2, 
+[data-theme="dark"] h3, 
+[data-theme="dark"] h4, 
+[data-theme="dark"] h5, 
+[data-theme="dark"] h6 {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] p {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] span {
+    color: #e0e0e0 !important;
+}
+
+/* Cartes et contenus */
+[data-theme="dark"] .project-card {
+    background: #2a2a2a !important;
+    border-bottom: 1px solid #333;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .news-item {
+    background: #2a2a2a !important;
+    border-bottom: 1px solid #333;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .project-tags span {
+    background: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Footer */
+[data-theme="dark"] footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] footer p {
+    color: #e0e0e0 !important;
+}
+
+/* Liens */
+[data-theme="dark"] a {
+    color: #7b7bf1 !important;
+}
+
+[data-theme="dark"] a:hover {
+    color: #9d9df5 !important;
+}
+
+/* Sections et containers */
+[data-theme="dark"] section {
+    background-color: #1a1a1a;
+}
+
+[data-theme="dark"] .container,
+[data-theme="dark"] .portfolio-container,
+[data-theme="dark"] .projects-container,
+[data-theme="dark"] .veille {
+    background-color: #1a1a1a;
+    color: #e0e0e0 !important;
+}
+
+/* Éléments spécifiques par page */
+[data-theme="dark"] #main h2 {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] #main p {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .container-accueil {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .container-accueil-gauche {
+    color: #e0e0e0 !important;
+}
+
+/* Boutons */
+[data-theme="dark"] .btn {
+    background-color: #6C63FF !important;
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .btn:hover {
+    background-color: #4339ff !important;
+}
+
+/* Formulaires et inputs */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #444 !important;
+}
+
+[data-theme="dark"] label {
+    color: #e0e0e0 !important;
+}
+
+/* Tables */
+[data-theme="dark"] table {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] th,
+[data-theme="dark"] td {
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+/* Listes */
+[data-theme="dark"] ul,
+[data-theme="dark"] ol,
+[data-theme="dark"] li {
+    color: #e0e0e0 !important;
+}
+
+/* Divs génériques */
+[data-theme="dark"] div {
+    color: inherit !important;
+}
+
+/* Images avec texte alternatif */
+[data-theme="dark"] img[alt] {
+    background-color: #2a2a2a;
+}
+
+/* Éléments de CV */
+[data-theme="dark"] .cv-container {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .cv-header {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .cv-header h1,
+[data-theme="dark"] .cv-header h2 {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .contact-info {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .contact-info div {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .contact-info span {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .contact-info svg {
+    stroke: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .cv-section,
+[data-theme="dark"] .cv-item,
+[data-theme="dark"] .skills-list,
+[data-theme="dark"] .experience {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .cv-content {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .cv-section h3,
+[data-theme="dark"] .cv-section h4 {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .cv-grid {
+    background-color: #1a1a1a !important;
+}
+
+/* Éléments de contact */
+[data-theme="dark"] .contact-info,
+[data-theme="dark"] .contact-form {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Éléments de compétences */
+[data-theme="dark"] .skills-section {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .skills-container {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .skills-grid {
+    background-color: #1a1a1a !important;
+}
+
+[data-theme="dark"] .skills-category {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .skill-item {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .skill-items {
+    background-color: #2a2a2a !important;
+}
+
+[data-theme="dark"] .skill-name {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .skill-bar {
+    background-color: #444 !important;
+}
+
+[data-theme="dark"] .skill-progress {
+    background-color: #6C63FF !important;
+}
+
+/* Styles globaux pour forcer la couleur */
+[data-theme="dark"] * {
+    border-color: #444 !important;
+}
+
+[data-theme="dark"] *:not(.btn):not(button):not(a):not(svg) {
+    color: #e0e0e0 !important;
+}
+
+/* Force absolument TOUS les textes */
+[data-theme="dark"] body *,
+[data-theme="dark"] html *,
+[data-theme="dark"] main *,
+[data-theme="dark"] section *,
+[data-theme="dark"] article *,
+[data-theme="dark"] div *,
+[data-theme="dark"] span *,
+[data-theme="dark"] p *,
+[data-theme="dark"] h1 *,
+[data-theme="dark"] h2 *,
+[data-theme="dark"] h3 *,
+[data-theme="dark"] h4 *,
+[data-theme="dark"] h5 *,
+[data-theme="dark"] h6 * {
+    color: #e0e0e0 !important;
+}
+
+/* Override spécifique pour les règles universelles des CSS de pages */
+[data-theme="dark"].dark body,
+[data-theme="dark"] body,
+[data-theme="dark"] html,
+html[data-theme="dark"],
+body[data-theme="dark"] {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] * {
+    color: #e0e0e0 !important;
+}
+
+/* Override ultra-spécifique pour les sélecteurs universels */
+html[data-theme="dark"] *,
+body[data-theme="dark"] *,
+[data-theme="dark"] * {
+    color: #e0e0e0 !important;
+    background-color: inherit !important;
+}
+
+/* Override spécifique pour certains éléments têtus */
+[data-theme="dark"] [style*="color"] {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] font {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] small {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] strong {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] em {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] mark {
+    background-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Mode plein écran sombre */
+[data-theme="dark"] .fullscreen-overlay {
+    background: #000000 !important;
+}
