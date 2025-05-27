@@ -11,12 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const title = document.createElement('h3');
                 title.textContent = stripHTML(item.title);
-                title.textContent = item.title;
                 newsItem.appendChild(title);
 
                 const description = document.createElement('p');
-                title.textContent = stripHTML(item.title);
-                description.innerHTML = item.content;
+                description.innerHTML = stripHTML(item.content);
                 newsItem.appendChild(description);
 
                 const link = document.createElement('a');

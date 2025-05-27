@@ -112,49 +112,106 @@ section {
 }
 
 .diapos-container {
-
     width: 75%;
     margin: 0 auto;
+    position: relative;
 }
 
-.boutonsdiapo {
-    position: relative;
-    float: left bottom;
-    size: 25%;
-    bottom: 17%;
-    left: 10%;
-
-
-
-
-}
-
-.bouton1 {
-    position: relative;
+.navigation-zones {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
     z-index: 2;
-    cursor: pointer;
-    background: none;
-    border: none;
-
 }
 
-.bouton2 {
+.zone-gauche {
+    width: 50%;
+    height: 100%;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgMThMOSAxMkwxNSA2IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg=='), pointer;
     position: relative;
-    z-index: 2;
-    cursor: pointer;
-    background: none;
+}
+
+.zone-droite {
+    width: 50%;
+    height: 100%;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOSAxOEwxNSAxMkw5IDYiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+'), pointer;
+    position: relative;
+}
+
+.fullscreen-controls {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+#fullscreen-btn {
+    display: inline-block;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #6C63FF;
     border: none;
-
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    transition: background-color 0.3s ease;
 }
 
-.gauche {
-    height: auto;
-    max-width: 8vw;
+#fullscreen-btn:hover {
+    background-color: #4339ff;
 }
 
-.droite {
-    height: auto;
-    max-width: 8vw;
+/* Styles pour le mode plein écran */
+.fullscreen-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: black !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.fullscreen-image-container {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+}
+
+.fullscreen-image {
+    max-width: 95vw !important;
+    max-height: 95vh !important;
+    object-fit: contain !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+}
+
+.fullscreen-overlay .navigation-zones {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    z-index: 10 !important;
+}
+
+.fullscreen-overlay .fullscreen-controls {
+    display: none !important;
 }
 
 footer {
@@ -163,5 +220,4 @@ footer {
     padding: 20px 0;
     width: 100%;
     margin-top: auto;
-
 }
