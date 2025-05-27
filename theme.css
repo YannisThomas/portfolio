@@ -349,6 +349,13 @@ body[data-theme="dark"] *,
     background-color: inherit !important;
 }
 
+/* Exception pour les images - ne pas changer leur affichage */
+[data-theme="dark"] img {
+    background-color: transparent !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+
 /* Override spécifique pour certains éléments têtus */
 [data-theme="dark"] [style*="color"] {
     color: #e0e0e0 !important;
@@ -375,7 +382,31 @@ body[data-theme="dark"] *,
     color: #e0e0e0 !important;
 }
 
+/* Diaporama en mode sombre */
+[data-theme="dark"] .diapo {
+    filter: none !important;
+    opacity: 1 !important;
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .diapos {
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .diapos-container {
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .diapo-container {
+    background-color: transparent !important;
+}
+
 /* Mode plein écran sombre */
 [data-theme="dark"] .fullscreen-overlay {
     background: #000000 !important;
+}
+
+[data-theme="dark"] .fullscreen-image {
+    filter: none !important;
+    opacity: 1 !important;
 }
