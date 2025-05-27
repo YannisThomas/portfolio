@@ -134,11 +134,19 @@ section {
     position: relative;
 }
 
+.zone-gauche:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .zone-droite {
     width: 50%;
     height: 100%;
     cursor: e-resize;
     position: relative;
+}
+
+.zone-droite:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .fullscreen-controls {
@@ -148,13 +156,13 @@ section {
     z-index: 3;
 }
 
-#fullscreen-btn {
+.btn, #fullscreen-btn {
     display: inline-block;
-    color: #ffffff;
+    color: #ffffff !important;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    background-color: #6C63FF;
+    background-color: #6C63FF !important;
     border: none;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
@@ -162,8 +170,8 @@ section {
     transition: background-color 0.3s ease;
 }
 
-#fullscreen-btn:hover {
-    background-color: #4339ff;
+.btn:hover, #fullscreen-btn:hover {
+    background-color: #4339ff !important;
 }
 
 /* Styles pour le mode plein écran */

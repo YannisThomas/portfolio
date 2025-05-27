@@ -1,23 +1,34 @@
 let slideIndex = 0;
 let isFullscreen = false;
-showSlides();
+
+// Attendre que le DOM soit chargé
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Script chargé');
+  showSlides();
+  
+  // Gestion du bouton plein écran
+  const fullscreenBtn = document.getElementById('fullscreen-btn');
+  if (fullscreenBtn) {
+    fullscreenBtn.addEventListener('click', function() {
+      console.log('Bouton cliqué');
+      if (!isFullscreen) {
+        enterFullscreen();
+      } else {
+        exitFullscreen();
+      }
+    });
+  }
+});
 
 // Contrôles clavier
 document.addEventListener('keydown', function(event) {
   if (event.key === 'ArrowLeft') {
+    console.log('Flèche gauche pressée');
     plusDiapo(-1);
   } else if (event.key === 'ArrowRight') {
+    console.log('Flèche droite pressée');
     plusDiapo(1);
   } else if (event.key === 'Escape' && isFullscreen) {
-    exitFullscreen();
-  }
-});
-
-// Gestion du bouton plein écran
-document.getElementById('fullscreen-btn').addEventListener('click', function() {
-  if (!isFullscreen) {
-    enterFullscreen();
-  } else {
     exitFullscreen();
   }
 });
