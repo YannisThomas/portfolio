@@ -134,11 +134,19 @@ section {
     position: relative;
 }
 
+.zone-gauche:hover {
+    background: none !important;
+}
+
 .zone-droite {
     width: 50%;
     height: 100%;
     cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOSAxOEwxNSAxMkw5IDYiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+'), pointer;
     position: relative;
+}
+
+.zone-droite:hover {
+    background: none !important;
 }
 
 .fullscreen-controls {
@@ -162,9 +170,6 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover, #fullscreen-btn:hover {
-    background-color: #4339ff !important;
-}
 
 /* Styles pour le mode plein écran */
 .fullscreen-overlay {
@@ -208,6 +213,11 @@ section {
     height: 100% !important;
     display: flex !important;
     z-index: 10 !important;
+}
+
+.fullscreen-overlay .zone-gauche:hover,
+.fullscreen-overlay .zone-droite:hover {
+    background: none !important;
 }
 
 .fullscreen-overlay .fullscreen-controls {
